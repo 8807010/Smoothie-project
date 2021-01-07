@@ -1,0 +1,56 @@
+/* Здесь подключаем шрифты, используя правило @font-face*/
+@font-face {
+    font-family: MuliRegular; 
+    src: url(./assets/fonts/Muli-Regular.woff); 
+}
+/*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
+
+
+
+/* Общие стили */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Header */
+
+
+/* Smoothies */
+
+
+/* About */
+
+
+/* Products */
+
+
+/* Story */
+
+
+/* Testimonials */
+
+
+/* Blog */
+
+
+/* Instagram */
+
+
+/* Footer */
+
+
+
+/* Здесь будут медиа запросы */
+
+
+
+
+
