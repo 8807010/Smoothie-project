@@ -53,7 +53,7 @@
                             <li class="personal__list-item">
                                 <a class="personal__link" href="#">
                                     <img class="personal__icon-cart" src="" alt=""></a>
-FIXME:                               <span class="personal__icon-cart-count">3</span>
+FIXME:                              <span class="personal__icon-cart-count">3</span>
                             </li>
                         </ul>
                     </div>
@@ -69,7 +69,7 @@ FIXME:                               <span class="personal__icon-cart-count">3</
                             </li>
                             <li class="social__list-item">
                                 <a class="social__link" href="#">
-                                    <img class="ssocial__icon" src="" alt=""></a>
+                                    <img class="social__icon" src="" alt=""></a>
                             </li>
                         </ul>
                     </div>
@@ -88,35 +88,35 @@ FIXME:                               <span class="personal__icon-cart-count">3</
         <div class="smoothies__list">
             <div class="smoothies__list-item">
                 <img class="smoothies__icon" src="#" alt="Plant Based">
-                <span class="smoothies__item item--red">Plant Based</span>
+                <span class="smoothies__item--red">Plant Based</span>
             </div>
             <div class="smoothies__list-item">
                 <img class="smoothies__icon" src="#" alt="Vegan">
-                <span class="smoothies__item item--redt">Vegan</span>
+                <span class="smoothies__item--red">Vegan</span>
             </div>
             <div class="smoothies__list-item">
                 <img class="smoothies__icon" src="#" alt="Paleo">
-                <span class="smoothies__item item--red">Paleo</span>
+                <span class="smoothies__item--red">Paleo</span>
             </div>
             <div class="smoothies__list-item">
                 <img class="smoothies__icon" src="#" alt="Gluten-Free">
-                <span class="smoothies__item item--red">Gluten-Free</span>
+                <span class="smoothies__item--red">Gluten-Free</span>
             </div>
             <div class="smoothies__list-item">
                 <img class="smoothies__icon" src="#" alt="Corn-Free">
-                <span class="smoothies__item item--red">Corn-Free</span>
+                <span class="smoothies__item--red">Corn-Free</span>
             </div>
             <div class="smoothies__list-item">
                 <img class="smoothies__icon" src="#" alt="Sou-Free">
-                <span class="smoothies__item item--red">Sou-Free</span>
+                <span class="smoothies__item--red">Sou-Free</span>
             </div>
             <div class="smoothies__list-item">
                 <img class="smoothies__icon" src="#" alt="Ayurvedic">
-                <span class="smoothies__item item--red">Ayurvedic</span>
+                <span class="smoothies__item--red">Ayurvedic</span>
             </div>
             <div class="smoothies__list-item">
                 <img class="smoothies__icon" src="#" alt="Made With Love">
-                <span class="smoothies__item item--red">Made With Love</span>
+                <span class="smoothies__item--red">Made With Love</span>
             </div>
         </div>
     </section>
@@ -141,40 +141,44 @@ FIXME:      <h2 class="about__title title">What makes Smoothie an <span class="a
     </section>
 
     <section class="products">
-        <div class="product__items products__item--chocolate">
+        <div class="product__item product__item--chocolate">
             <img class="product__icon" src="#" alt="Dark Chocolate Smoothie">
             <h3 class="product__name">Dark Chocolate Smoothie</h3>
-            <span>100 ml</span> 
-            <button>Buy<img class="arrow arrow--white" src="#" alt=""></button>
+            <span class="product__name--capacity">100 ml</span> 
+            <button class="product-btn btn btn--transparency">
+                Buy<img class="arrow arrow--white" src="#" alt=""></button>
         </div>
-        <div class="product__items products__item--vegan">
+        <div class="product__item product__item--vegan">
             <img class="product__icon" src="#" alt="Vegan Lettuce Smoothie">
             <h3 class="product__name">Vegan Lettuce Smoothie</h3>
-            <span>100 ml</span> 
-            <button>Buy<img class="arrow arrow--white" src="#" alt=""></button>
+            <span class="product__name--capacity">100 ml</span> 
+            <button class="product-btn btn btn--transparency">Buy
+                <img class="arrow arrow--white" src="#" alt=""></button>
             </div>
-        <div class="product__items products__item--lemon">
+        <div class="product__item product__item--lemon">
             <img class="product__icon" src="#" alt="Lemon Ginger Smoothie">
             <h3 class="product__name">Lemon Ginger Smoothie</h3>
-            <span>100 ml</span> 
-            <button>Buy<img class="arrow arrow--white" src="#" alt=""></button>
+            <span class="product__name--capacity">100 ml</span> 
+            <button class="product-btn btn btn--transparency">Buy
+                <img class="arrow arrow--white" src="#" alt=""></button>
         </div>
-        <div class="product__items products__item--turmeric">
+        <div class="product__items product__item--turmeric">
             <img class="product__icon" src="#" alt="Turmeric Garlic Smoothie">
             <h3 class="product__name">Turmeric Garlic Smoothie</h3>
-            <span>100 ml</span> 
-            <button>Buy<img class="arrow arrow--white" src="#" alt=""></button>
+            <span class="product__name--capacity">100 ml</span> 
+            <button class="product-btn btn btn--transparency">Buy
+                <img class="arrow arrow--white" src="#" alt=""></button>
         </div>
     </section>
 
-    <section class="our story">
-        <div class="story">
+    <section class="story">
+        <div class="story__wrapper">
             <h2 class="story__title title">Our story</h2>
             <p class="story__text text">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.</p>
             <button class="story__btn btn btn--green">Who we are
-                <img class="btn__arrow-yellow" src="#" alt=""></button>
+                <img class="arrow arrow-yellow" src="#" alt=""></button>
         </div>
-        <img src="#" alt="">
+        <img class="story__img" src="#" alt="">
     </section>
 
     <section class="testimonials">
@@ -206,7 +210,7 @@ FIXME:      <h2 class="about__title title">What makes Smoothie an <span class="a
     </section>
 
     <section class="instagram">
-        <div class="blog-instagram"><a href="#"><img src="#" alt="">ashasuperfoods</a></div>
+        <div class="instagram"><a href="#"><img src="#" alt="">ashasuperfoods</a></div>
         <div class="instagram-foto">
             <div>
                 <a href="#"><img src="#" alt=""></a>
