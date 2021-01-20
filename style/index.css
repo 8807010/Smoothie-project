@@ -19,6 +19,11 @@ a {
 
 
 /* Header */
+.header__top {
+    display: flex;
+    
+
+}
 
 
 /* Smoothies */
