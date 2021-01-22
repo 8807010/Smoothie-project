@@ -1,32 +1,222 @@
 /* Здесь подключаем шрифты, используя правило @font-face*/
 @font-face {
     font-family: MuliRegular; 
-    src: url(./assets/fonts/Muli-Regular.woff); 
+    src: url(../assets/fonts/Muli-Regular.woff); 
 }
-/*И повторяем этот кусок кода изменяя имя шрифта и путь к файлу*/
 
+@font-face {
+    font-family: MuliBold;
+    src: url(../assets/fonts/Muli-Bold.woff);
+}
+
+@font-face {
+    font-family: MuliExtraBold;
+    src: url(../assets/fonts/Muli-ExtraBold.woff);
+}
+
+@font-face {
+    font-family: MuliExtraBoldItalic;
+    src: url(../assets/fonts/Muli-ExtraBoldItalic.woff);
+}
+
+@font-face {
+    font-family: MuliRegular;
+    src: url(../assets/fonts/Muli-Regular.woff);
+}
+
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(../assets/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: PoppinsSemiBold;
+    src: url(../assets/fonts/Poppins-SemiBold.ttf);
+}
 
 
 /* Общие стили */
 html,
 body {
-   
+
 }
 
 a {
     text-decoration: none;
 }
 
-
 /* Header */
+
+.header {
+    background-image: url('../imаgеs/header-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
 .header__top {
     display: flex;
-    
+    align-items: center;
+    justify-content: space-between;
+    padding: 65px 100px 105px 100px;
+}
 
+.header__menu {
+    border: 1px solid red;
+}
+
+.menu__list {
+    display: flex;
+    border: 1px solid red;
+}
+
+.menu__item {
+    list-style-type: none;
+    border: 1px solid red;
+    font-family: "MuliBold";
+    font-size: 16px;
+    margin-right: 30px;
+}
+
+.menu__item:nth-child(6n) {
+margin-right: 0
+}
+
+.menu__link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.header__right-block {
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    border: 2px solid red;
+    width: 210px;
+    height: 72px;
+}
+
+.personal__list {
+    border: 1px solid red;
+    list-style-type: none;
+    display: flex;
+}
+
+.personal__list-item {
+    margin-right: 45px;
+    display: flex;
+}
+
+.personal__list-item:nth-child(3n) {
+    margin-right: 0
+}
+
+.personal__link {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+}
+
+.personal__cart-count {
+    font-family: "MuliRegular";
+    font-size: 10px;
+    color: #000;
+    background-color: #fff;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__list-item {
+    margin-right: 10px;
+    background-color: #ffffff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__list {
+    border: 1px solid red;
+    list-style-type: none;
+    display: flex;
+}
+
+.social__list-item:nth-child(3n) {
+    margin-right: 0
+}
+
+.social__link {
+}
+
+.social__icon {
+    /* padding: 10px; */
 }
 
 
+.header__btn {
+    width: 280px;
+    height: 70px;
+    font-size: 24px;
+    font-family: "MuliExtraBold";
+    border-radius:35px;
+    -webkit-border-radius:35px;
+    -moz-border-radius:35px;
+    -ms-border-radius:35px;
+    -o-border-radius:35px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.btn--green {
+    background-color: #0aa566;
+}
+
+.btn {
+    color: #ffffff;
+    /* padding: 25px 70px 25px 40px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow--yellow {
+}
+
+
+
 /* Smoothies */
+
+.smoothies {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 110px;
+}
+
+.smoothies__text {
+    width: 915px;
+    border: 1px solid red;
+}
 
 
 /* About */
