@@ -34,6 +34,10 @@
     src: url(../assets/fonts/Poppins-SemiBold.ttf);
 }
 
+@font-face {
+    font-family: MuliItalic;
+    src: url(../assets/fonts/Muli-Italic.ttf);
+}
 
 /* Общие стили */
 html,
@@ -280,6 +284,7 @@ margin-right: 0
     margin-top: 65px;
     width: 690px;
     height: 820px;
+    z-index: 1;
 }
 
 .about__title {
@@ -326,13 +331,89 @@ margin-right: 0
     margin-top: 55px;
 }
 
-.btn--yellow {
+.btn--border-yellow {
     border: 2px #f8b231 solid;
+}
+
+/* Products */
+
+.products {
+    display: flex;
+
+}
+    
+.product__item {
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.product__item--chocolate {
+    background-color: #632b17;
+}
+
+.product__item--vegan {
+    background-color: #178670;
+}
+
+.product__item--lemon {
+    background-color: #f7ae3b;
+}
+
+.product__item--turmeric {
+    background-color: #c3471b;
+}
+
+.product__img {
+    width: 120px;
+    height: 300px;
+    margin-top: 130px;
+}
+
+.product__name {
+    font-family: "MuliBold";
+    font-size: 24px;
+    line-height: 22px;
+    color: #fff;
+    padding-top: 35px;
+}
+
+.product__capacity {
+    font-family: " MuliItalic";
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff; 
+}
+
+.product-btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 21px;
+    line-height: 22px;
+    color: #fff;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: transparent;
+    margin-bottom: 80px;
+    margin-top: 65px;
+
 }
 
 
 
-/* Products */
+
+
+.btn--border-white {
+    border: 2px #fff solid;
+} 
 
 
 /* Story */
