@@ -175,7 +175,6 @@ margin-right: 0
     width: 280px;
     height: 70px;
     font-size: 24px;
-    font-family: "MuliExtraBold";
     border-radius:35px;
     -webkit-border-radius:35px;
     -moz-border-radius:35px;
@@ -194,6 +193,7 @@ margin-right: 0
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: "MuliExtraBold";
 }
 
 .arrow--yellow {
@@ -262,12 +262,74 @@ margin-right: 0
 
 .smoothies__feature-title {
     color: #f2612d;
-    font-family: MuliExtraBold;
+    font-family: "MuliExtraBold";
     font-size: 25px;
     margin-top: 25px;
 }
 
 /* About */
+
+.about {
+    background-color: #14826f;
+    display: flex;
+    justify-content: space-evenly;
+    height: 800px;
+}
+
+.about__img {
+    margin-top: 65px;
+    width: 690px;
+    height: 820px;
+}
+
+.about__title {
+    font-family: "MuliExtraBold";
+    font-size: 55px;
+    color: #ffffff;
+    line-height: 60px;
+    width: 590px;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+
+.title--yellow {
+    color: #cae941;
+}
+
+.about__list-item {
+    font-family: "MuliRegular";
+    font-size: 21px;
+    line-height: 22px;
+    color: #fff;
+    list-style-image: url(../imаgеs/list-style.png);
+}
+
+.about__text--bold {
+    font-family: "MuliBold";
+}
+
+.about__btn {
+    width: 380px;
+    height: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-size: 21px;
+    line-height: 22px;
+    color: #fff;
+    padding-left: 30px;
+    padding-right: 40px;
+    background-color: transparent;
+    margin-bottom: 95px;
+    margin-top: 55px;
+}
+
+.btn--yellow {
+    border: 2px #f8b231 solid;
+}
+
 
 
 /* Products */
