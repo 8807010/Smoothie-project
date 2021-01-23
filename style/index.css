@@ -179,11 +179,6 @@ margin-right: 0
     width: 280px;
     height: 70px;
     font-size: 24px;
-    border-radius:35px;
-    -webkit-border-radius:35px;
-    -moz-border-radius:35px;
-    -ms-border-radius:35px;
-    -o-border-radius:35px;
     padding-right: 40px;
     padding-left: 40px;
 }
@@ -198,12 +193,12 @@ margin-right: 0
     justify-content: space-between;
     align-items: center;
     font-family: "MuliExtraBold";
+    border-radius:35px;
+    -webkit-border-radius:35px;
+    -moz-border-radius:35px;
+    -ms-border-radius:35px;
+    -o-border-radius:35px;
 }
-
-.arrow--yellow {
-}
-
-
 
 /* Smoothies */
 
@@ -404,12 +399,7 @@ margin-right: 0
     background-color: transparent;
     margin-bottom: 80px;
     margin-top: 65px;
-
 }
-
-
-
-
 
 .btn--border-white {
     border: 2px #fff solid;
@@ -418,6 +408,57 @@ margin-right: 0
 
 /* Story */
 
+.story {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.story__title {
+    font-family: "MuliExtraBold";
+    font-size: 50px;
+    line-height: 40px;
+    color: #f7ae3b;
+    padding-top: 260px;
+    padding-bottom: 45px;
+}
+
+.story__text {
+    font-family: "MuliRegular";
+    font-size: 18px;
+    line-height: 35px;
+    width: 510px;
+
+}
+
+.story__img {
+    margin-top: 120px;
+    margin-bottom: 160px;
+}
+
+.header__btn {
+    width: 280px;
+    height: 70px;
+    font-size: 24px;
+    border-radius:35px;
+    -webkit-border-radius:35px;
+    -moz-border-radius:35px;
+    -ms-border-radius:35px;
+    -o-border-radius:35px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.story__btn {
+    width: 300px;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 40px;
+    font-size: 21px;
+    line-height: 22px;
+    margin-top: 60px;
+    margin-bottom: 315px;
+
+}
 
 /* Testimonials */
 
