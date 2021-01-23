@@ -39,6 +39,11 @@
     src: url(../assets/fonts/Muli-Italic.ttf);
 }
 
+@font-face {
+    font-family: MuliSemiBoldItalic;
+    src: url(../assets/fonts/Muli-SemiBoldItalic.ttf);
+}
+
 /* Общие стили */
 html,
 body {
@@ -216,10 +221,13 @@ margin-right: 0
 }
 
 .smoothies__title {
-    font-family: "MuliExtraBold";
     font-size: 50px;
     color: #f7ae3b;
     line-height: 40px;
+}
+
+.title {
+    font-family: "MuliExtraBold";
 }
 
 .smoothies__text {
@@ -461,6 +469,62 @@ margin-right: 0
 }
 
 /* Testimonials */
+
+.testimonials {
+    background-color: #672f1b;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.testimonials__title {
+    color: #f7ae3b;
+    font-size: 50px;
+    line-height: 40px;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.testimonials__title--red {
+    color: #f2612d;
+}
+
+.testimonials__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.testimonials__feedback {
+    width: 455px;
+    padding-top: 65px;
+    margin-right: 60px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.testimonials__text {
+    color: #fff;
+    font-family: "MuliRegular";
+    font-size: 18px;
+    line-height: 35px;
+}
+
+.testimonials__img {
+    padding-bottom: 220px;
+}
+
+.text--yellow {
+    font-family: "MuliSemiBoldItalic";
+    font-size: 18px;
+    line-height: 45px;
+    color: #f7ae3b;
+
+}
 
 
 /* Blog */
