@@ -62,15 +62,14 @@ a {
     background-position: center;
     background-size: cover;
     height: 100vh;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: flex;
+    flex-direction: column;
 }
 
 .header__top {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 65px 100px 105px 100px;
 }
 
@@ -92,7 +91,7 @@ a {
 }
 
 .menu__item:nth-child(6n) {
-margin-right: 0
+margin-right: 0;
 }
 
 .menu__link {
@@ -129,7 +128,7 @@ margin-right: 0
 }
 
 .personal__list-item:nth-child(3n) {
-    margin-right: 0
+    margin-right: 0;
 }
 
 .personal__link {
@@ -177,7 +176,12 @@ margin-right: 0
 }
 
 .social__list-item:nth-child(3n) {
-    margin-right: 0
+    margin-right: 0;
+}
+
+.header__content {
+    display: flex;
+    justify-content: center;
 }
 
 .header__btn {
@@ -238,10 +242,10 @@ margin-right: 0
     text-align: center;
     margin-top: 55px;
     margin-bottom: 60px;
+    color: #1e1e1e;
 }
 
 .title {
-
 }
 
 .smoothies__features {
@@ -254,7 +258,6 @@ margin-right: 0
     align-items: center;
     background-color: #f6edde;
     grid-gap: 2px;
-
 }
 
 .smoothies__feature {
@@ -295,9 +298,9 @@ margin-right: 0
     font-size: 55px;
     color: #ffffff;
     line-height: 60px;
-    width: 590px;
-    margin-top: 100px;
-    margin-bottom: 70px;
+    width: 620px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .title--yellow {
@@ -310,10 +313,14 @@ margin-right: 0
     line-height: 22px;
     color: #fff;
     list-style-image: url(../imаgеs/list-style.png);
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-left: 25px;
 }
 
 .about__text--bold {
     font-family: "MuliBold";
+    color: #fff;
 }
 
 .about__btn {
@@ -331,7 +338,7 @@ margin-right: 0
     padding-right: 40px;
     background-color: transparent;
     margin-bottom: 95px;
-    margin-top: 55px;
+    margin-top: 50px;
 }
 
 .btn--border-yellow {
@@ -342,16 +349,14 @@ margin-right: 0
 
 .products {
     display: flex;
-
 }
-    
+
 .product__item {
     flex-basis: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .product__item--chocolate {
@@ -413,7 +418,6 @@ margin-right: 0
     border: 2px #fff solid;
 } 
 
-
 /* Story */
 
 .story {
@@ -435,7 +439,6 @@ margin-right: 0
     font-size: 18px;
     line-height: 35px;
     width: 510px;
-
 }
 
 .story__img {
@@ -465,7 +468,6 @@ margin-right: 0
     line-height: 22px;
     margin-top: 60px;
     margin-bottom: 315px;
-
 }
 
 /* Testimonials */
