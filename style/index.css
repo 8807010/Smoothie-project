@@ -319,7 +319,7 @@ margin-right: 0;
 }
 
 .about__text--bold {
-    font-family: "MuliBold";
+    font-family: "MuliExtraBold";
     color: #fff;
 }
 
@@ -500,7 +500,7 @@ margin-right: 0;
 }
 
 .testimonials__feedback {
-    width: 455px;
+    width: 460px;
     padding-top: 65px;
     margin-right: 60px;
     display: flex;
@@ -525,11 +525,92 @@ margin-right: 0;
     font-size: 18px;
     line-height: 45px;
     color: #f7ae3b;
-
 }
 
+.testimonials__arrows {
+    margin-bottom: 80px;
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonials__btn {
+    width: 30px;
+    background-color: transparent;
+}
+
+.arrow--left {
+    /* margin-right: 100px; */
+}
 
 /* Blog */
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 360px;
+}
+
+.blog__title {
+    color: #f7ae3b;
+    font-size: 50px;
+    line-height: 40px;
+    padding-top: 130px;
+}
+
+.blog__img {
+    width: 555px;
+    height: 400px;
+}
+
+.blog__post-title {
+    font-family: "MuliExtraBold";
+    font-size: 30px;
+    line-height: 40px;
+    color: #f2612d;
+    margin-top: 130px;
+}
+
+.blog__time {
+    font-family: "MuliRegular";
+    font-size: 16px;
+    color: #1e1e1e;
+    margin-top: 20px;
+}
+
+.blog__text {
+    width: 480px;
+    font-family: "MuliRegular";
+    font-size: 18px;
+    line-height: 35px;
+    color: #1e1e1e;
+    margin: 45px 0 0 60px;
+}
+
+.blog__link {
+    font-family: "MuliExtraBoldItalic";
+    font-size: 18px;
+    line-height: 35px;
+    color: #1e1e1e;
+}
+
+.blog__arrow {
+    width: 18px;
+}
+
+.blog__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 200px;
+}
+
+.blog__post {
+    padding-left: 60px;
+}
+
 
 
 /* Instagram */
