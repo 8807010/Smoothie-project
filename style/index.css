@@ -615,10 +615,54 @@ margin-right: 0;
 
 /* Instagram */
 
+.instagram__link {
+    font-family: "MuliExtraBold";
+    font-size: 24px;
+    color: #0aa566;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.instagram__logo {
+    width: 26px;
+    height: 26px;
+    margin-right: 12px;
+}
+
+.instagram__galary {
+    display: flex;
+    flex-basis: 20%;
+}
+
 
 /* Footer */
 
+.footer {
+    background-color: #f6ab3b;
+    width: 100%;
+}
 
+.footer__top {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__logo {
+    width: 210px;
+}
+
+.footer__title {
+    font-family: "MuliExtraBold";
+    font-size: 26px;
+    color: #ffffff;
+}
+
+.footer__bottom {
+    background-color: #6c2c1c;
+
+}
 
 /* Здесь будут медиа запросы */
 
