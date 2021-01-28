@@ -352,8 +352,8 @@ margin-right: 0;
 }
 
 .product__item {
-    flex-basis: 25%;
     display: flex;
+    flex-basis: 25%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -423,6 +423,7 @@ margin-right: 0;
 .story {
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 .story__title {
@@ -442,8 +443,24 @@ margin-right: 0;
 }
 
 .story__img {
+    position: relative;
+}
+
+.story__img--stamp {
     margin-top: 120px;
     margin-bottom: 160px;
+}
+
+.story__img::before {
+    content: "";
+    background-image: url(../imаgеs/Stamp.png);
+    width: 290px;
+    height: 220px;
+    position: absolute;
+    top: 140px;
+    left: -160px;
+    z-index: 1;
+
 }
 
 .header__btn {
@@ -641,27 +658,131 @@ margin-right: 0;
 
 .footer {
     background-color: #f6ab3b;
-    width: 100%;
 }
 
 .footer__top {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .footer__logo {
     width: 210px;
+    padding-top: 130px;
+    padding-right: 300px;
 }
 
 .footer__title {
     font-family: "MuliExtraBold";
     font-size: 26px;
     color: #ffffff;
+    padding-top: 80px;
+    padding-bottom: 35px;
 }
 
 .footer__bottom {
     background-color: #6c2c1c;
+}
 
+.footer__item-link {
+    font-family: "MuliBold";
+    font-size: 18px;
+    line-height: 35px;
+    color: #6d450c;
+}
+
+.footer__list-item {
+    list-style-type: none;
+}
+
+.footer__payments {
+    width: 280px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.footer__payment {
+    padding-bottom: 30px;
+    padding-right: 20px;
+}
+
+.footer__input {
+    width: 495px;
+    height: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-family: "MuliBold";
+    font-size: 17px;
+    color: #6d450c;
+    padding: 25px 220px 25px 65px;
+    border-style: none;
+}
+
+.footer__follow-link {
+    font-family: "MuliExtraBold";
+    font-size: 18px;
+    line-height: 40px;
+    color: #6d450c;
+    padding-right: 45px;
+}
+
+.footer__follow {
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 130px;
+    padding-left: 185px;
+    align-items: center;
+}
+
+.footer__social-link {
+    padding-right: 25px;
+}
+
+.footer__bottom {
+    display: flex;
+    justify-content: center;
+    height: 60px;
+}
+
+.footer__copyright {
+    font-family: "MuliRegular";
+    font-size: 13px;
+    line-height: 35px;
+    color: #af8a82;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__label {
+    font-family: "MuliBold";
+    font-size: 16px;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+.arrow--white-top {
+    background-color: transparent;
+}
+
+.footer__btn-to-top {
+    width: 50px;
+    height: 50px;
+    background-color: #f2662f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Здесь будут медиа запросы */
