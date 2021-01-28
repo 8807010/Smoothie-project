@@ -301,10 +301,21 @@ margin-right: 0;
     width: 620px;
     padding-top: 100px;
     padding-bottom: 50px;
+    position: relative;
 }
 
 .title--yellow {
     color: #cae941;
+}
+
+.title--yellow::after {
+    content: "";
+    background-image: url(../imаgеs/Line.png);
+    width: 450px;
+    height: 13px;
+    position: absolute;
+    top: 220px;
+    left: 70px;
 }
 
 .about__list-item {
@@ -443,7 +454,7 @@ margin-right: 0;
 }
 
 .story__img {
-    position: relative;
+    position: relative; 
 }
 
 .story__img--stamp {
