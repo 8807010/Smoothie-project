@@ -91,7 +91,7 @@ a {
 }
 
 .menu__item:nth-child(6n) {
-margin-right: 0;
+    margin-right: 0;
 }
 
 .menu__link {
@@ -103,6 +103,8 @@ margin-right: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 420px;
+
 }
 
 .header__logo {
@@ -115,20 +117,36 @@ margin-right: 0;
     border: 1px solid red;
     list-style-type: none;
     display: flex;
-    position: relative;
 }
 
 .header__personal {
-    margin-right: 135px;
-    
+    position: relative;
+}
+
+.header__personal::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 50px;
+    background-color: #ffd68f;
+    position: absolute;
+    top: 50%;
+    right: -95px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .personal__list-item {
     margin-right: 45px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.personal__list-item:nth-child(3n) {
+.personal__list-item:last-child {
     margin-right: 0;
 }
 
@@ -150,19 +168,13 @@ margin-right: 0;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    display: inline-block;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.personal__cart-count::after {
-    content: "";
     position: absolute;
-    top: 5px;
-    left: 10px;
-
-
-
+    top: -8px;
+    left: 150px;
 }
 
 .social__list-item {
@@ -186,7 +198,7 @@ margin-right: 0;
     display: flex;
 }
 
-.social__list-item:nth-child(3n) {
+.social__list-item:last-child {
     margin-right: 0;
 }
 
@@ -201,10 +213,28 @@ margin-right: 0;
     font-size: 24px;
     padding-right: 40px;
     padding-left: 40px;
+    position: relative;
 }
 
 .btn--green {
     background-color: #0aa566;
+}
+
+.btn--green::after,
+.btn--border-yellow::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 16px;
+    width: 30px;
+    background-image: url(../imаgеs/Arrow.png);
+    top: 50%;
+    right: 38px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
 }
 
 .btn {
@@ -518,7 +548,6 @@ margin-right: 0;
     align-items: center;
     position: relative;
 }
-
 
 .testimonials__title {
     color: #f7ae3b;
