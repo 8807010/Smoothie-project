@@ -753,15 +753,20 @@ a {
 }
 
 .instagram__galary {
-    width: 20%;
-    position: relative;
     margin-bottom: 10px;
     display: flex;
+    width: 100%;
 }
 
-.instagram__link-bg::after {
+.instagram__bg {
+    width: 20%;
+    object-fit: cover;   
+    position: relative;
+}
+
+.instagram__bg::after {
     content: "";
-    display: block;
+    display: inline-block;
     background-image: url(../imаgеs/Instagram.png);
     width: 26px;
     height: 26px;
