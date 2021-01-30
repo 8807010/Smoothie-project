@@ -99,6 +99,10 @@ a {
     text-decoration: none;
 }
 
+.menu__link:hover {
+    font-size: 20px;
+}
+
 .header__right-block {
     display: flex;
     justify-content: space-between;
@@ -213,11 +217,21 @@ a {
     font-size: 24px;
     padding-right: 40px;
     padding-left: 40px;
-    position: relative;
 }
+
 
 .btn--green {
     background-color: #0aa566;
+    position: relative;
+}
+
+.btn--green:hover {
+    background-color: #0d724a;
+    font-size: 30px;
+}
+
+.btn--green:hover::after {
+    right: 28px;
 }
 
 .btn--green::after,
@@ -284,9 +298,6 @@ a {
     margin-top: 55px;
     margin-bottom: 60px;
     color: #1e1e1e;
-}
-
-.title {
 }
 
 .smoothies__features {
@@ -512,19 +523,6 @@ a {
     top: 140px;
     left: -160px;
     z-index: 1;
-}
-
-.header__btn {
-    width: 280px;
-    height: 70px;
-    font-size: 24px;
-    border-radius:35px;
-    -webkit-border-radius:35px;
-    -moz-border-radius:35px;
-    -ms-border-radius:35px;
-    -o-border-radius:35px;
-    padding-right: 40px;
-    padding-left: 40px;
 }
 
 .story__btn {
@@ -755,10 +753,10 @@ a {
 }
 
 .instagram__galary {
-    display: flex;
-    flex-basis: 20%;
+    width: 20%;
     position: relative;
     margin-bottom: 10px;
+    display: flex;
 }
 
 .instagram__link-bg::after {
@@ -846,10 +844,7 @@ a {
     border-style: none;
     background-image: url(../imаgеs/Icon-envelope.png);
     background-repeat: no-repeat;
-    /* position: absolute; */
-    top: 10px;
-    left: -5px;
-    z-index: 1;
+    background-position: top 50% left 20px;
 }
 
 .footer__follow {
