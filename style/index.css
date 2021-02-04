@@ -289,7 +289,8 @@ a {
 }
 
 .smoothies__text {
-    width: 915px;
+    max-width: 915px;
+    width: 100%;
     border: 1px solid red;
 }
 
