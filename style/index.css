@@ -67,11 +67,16 @@ a {
     flex-direction: column;
 }
 
-.header__top {
+.navigacion {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 65px 100px 105px 100px;
+    width: 100%;
+}
+
+.header__top {
+    padding: 70px 100px 70px;
+    position: relative;
 }
 
 .header__menu {
@@ -114,13 +119,20 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 420px;
-
 }
 
 .header__logo {
     border: 2px solid red;
     width: 210px;
     height: 72px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .personal__list {
@@ -197,9 +209,6 @@ a {
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
 }
 
 .social__link {
@@ -234,6 +243,20 @@ a {
     padding-left: 40px;
 }
 
+.header__burger-btn {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    display: none;
+}
+
+.header__burger-btn-img {
+    width: 100%;
+}
 
 .btn--green {
     background-color: #0aa566;
@@ -965,6 +988,15 @@ a {
 
 /* Здесь будут медиа запросы */
 
+@media (max-width: 768px) {
+    .navigacion {
+        display: none;
+    }
+
+    .header__burger-btn {
+        display: block;
+    }
+}
 
 
 
