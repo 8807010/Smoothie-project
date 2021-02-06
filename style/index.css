@@ -47,7 +47,8 @@
 /* Общие стили */
 html,
 body {
-
+    font-family: 'MuliRegular', sans-serif;
+    font-size: 10px;
 }
 
 a {
@@ -86,7 +87,7 @@ a {
     list-style-type: none;
     border: 1px solid red;
     font-family: "MuliBold";
-    font-size: 16px;
+    font-size: 1.6rem;
     margin-right: 30px;
 }
 
@@ -167,7 +168,7 @@ a {
 
 .personal__cart-count {
     font-family: "MuliRegular";
-    font-size: 10px;
+    font-size: 1rem;
     color: #000;
     background-color: #fff;
     width: 18px;
@@ -228,7 +229,7 @@ a {
 .header__btn {
     width: 280px;
     height: 70px;
-    font-size: 24px;
+    font-size: 2.4rem;
     padding-right: 40px;
     padding-left: 40px;
 }
@@ -241,7 +242,6 @@ a {
 
 .btn--green:hover {
     background-color: #0d724a;
-    font-size: 30px;
 }
 
 .btn--green:hover::after {
@@ -295,7 +295,7 @@ a {
 }
 
 .smoothies__title {
-    font-size: 50px;
+    font-size: 5rem;
     color: #f7ae3b;
     line-height: 40px;
 }
@@ -307,7 +307,7 @@ a {
 .smoothies__text {
     width: 915px;
     font-family: "MuliRegular";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 35px;
     text-align: center;
     margin-top: 55px;
@@ -340,7 +340,7 @@ a {
 .smoothies__feature-title {
     color: #f2612d;
     font-family: "MuliExtraBold";
-    font-size: 25px;
+    font-size: 2.5rem;
     margin-top: 25px;
 }
 
@@ -362,7 +362,7 @@ a {
 
 .about__title {
     font-family: "MuliExtraBold";
-    font-size: 55px;
+    font-size: 5.5rem;
     color: #ffffff;
     line-height: 60px;
     width: 620px;
@@ -387,7 +387,7 @@ a {
 
 .about__list-item {
     font-family: "MuliRegular";
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 22px;
     color: #fff;
     list-style-image: url(../imаgеs/list-style.png);
@@ -409,7 +409,7 @@ a {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 22px;
     color: #fff;
     padding-left: 30px;
@@ -461,7 +461,7 @@ a {
 
 .product__name {
     font-family: "MuliBold";
-    font-size: 24px;
+    font-size: 2.4rem;
     line-height: 22px;
     color: #fff;
     padding-top: 35px;
@@ -469,7 +469,7 @@ a {
 
 .product__capacity {
     font-family: " MuliItalic";
-    font-size: 20px;
+    font-size: 2rem;
     line-height: 32px;
     color: #fff; 
 }
@@ -482,7 +482,7 @@ a {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 22px;
     color: #fff;
     padding-left: 35px;
@@ -506,7 +506,7 @@ a {
 
 .story__title {
     font-family: "MuliExtraBold";
-    font-size: 50px;
+    font-size: 5rem;
     line-height: 40px;
     color: #f7ae3b;
     padding-top: 260px;
@@ -515,7 +515,7 @@ a {
 
 .story__text {
     font-family: "MuliRegular";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 35px;
     width: 510px;
 }
@@ -545,7 +545,7 @@ a {
     height: 60px;
     padding-left: 30px;
     padding-right: 40px;
-    font-size: 21px;
+    font-size: 2.1rem;
     line-height: 22px;
     margin-top: 60px;
     margin-bottom: 315px;
@@ -564,7 +564,7 @@ a {
 
 .testimonials__title {
     color: #f7ae3b;
-    font-size: 50px;
+    font-size: 5rem;
     line-height: 40px;
     margin-top: 120px;
     margin-bottom: 120px;
@@ -604,7 +604,7 @@ a {
 .testimonials__feedback::before {
     content: "Sarah A";
     font-family: "MuliExtraBold";
-    font-size: 200px;
+    font-size: 20rem;
     line-height: 40px;
     color: rgba(82, 25, 5, 0.6);
     width: 770px;
@@ -618,7 +618,7 @@ a {
 .testimonials__text {
     color: #fff;
     font-family: "MuliRegular";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 35px;
     z-index: 1;
 }
@@ -629,7 +629,7 @@ a {
 
 .text--yellow {
     font-family: "MuliSemiBoldItalic";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 45px;
     color: #f7ae3b;
 }
@@ -659,20 +659,26 @@ a {
 
 .blog {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog__left {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    margin-left: 360px;
 }
 
 .blog__title {
     color: #f7ae3b;
-    font-size: 50px;
-    padding-top: 130px;
+    font-size: 5rem;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .blog__img {
     width: 555px;
     height: 400px;
+    margin-bottom: 200px;
 }
 
 .blog__post {
@@ -681,7 +687,7 @@ a {
 
 .blog__post-title {
     font-family: "MuliExtraBold";
-    font-size: 30px;
+    font-size: 3rem;
     line-height: 40px;
     color: #f2612d;
     margin-top: 130px;
@@ -698,14 +704,11 @@ a {
     z-index: -1;
     border-radius: 15px;
     -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
 }
 
 .blog__time {
     font-family: "MuliRegular";
-    font-size: 16px;
+    font-size: 1.6rem;
     color: #1e1e1e;
     line-height: 35px;
 }
@@ -713,15 +716,15 @@ a {
 .blog__text {
     width: 480px;
     font-family: "MuliRegular";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 35px;
     color: #1e1e1e;
-    margin: 30px 0 0 60px;
+    margin: 20px 0 0 60px;
 }
 
 .blog__link {
     font-family: "MuliExtraBoldItalic";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 35px;
     color: #1e1e1e;
 }
@@ -734,15 +737,11 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    padding-bottom: 200px;
 }
 
 .blog__post {
     padding-left: 60px;
 }
-
-
 
 /* Instagram */
 
@@ -752,7 +751,7 @@ a {
 
 .instagram__link {
     font-family: "MuliExtraBold";
-    font-size: 24px;
+    font-size: 2.4rem;
     color: #0aa566;
     display: flex;
     justify-content: center;
@@ -816,7 +815,7 @@ a {
 
 .footer__title {
     font-family: "MuliExtraBold";
-    font-size: 26px;
+    font-size: 2.6rem;
     color: #ffffff;
     padding-top: 80px;
     padding-bottom: 35px;
@@ -828,7 +827,7 @@ a {
 
 .footer__item-link {
     font-family: "MuliBold";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 35px;
     color: #6d450c;
 }
@@ -862,7 +861,7 @@ a {
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
     font-family: "MuliBold";
-    font-size: 17px;
+    font-size: 1.7rem;
     color: #6d450c;
     padding: 25px 20px 25px 65px;
     border-style: none;
@@ -882,7 +881,7 @@ a {
 
 .footer__follow-link {
     font-family: "MuliExtraBold";
-    font-size: 18px;
+    font-size: 1.8rem;
     line-height: 40px;
     color: #6d450c;
     padding-right: 45px;
@@ -910,7 +909,7 @@ a {
 
 .footer__copyright {
     font-family: "MuliRegular";
-    font-size: 13px;
+    font-size: 1.3rem;
     line-height: 35px;
     color: #af8a82;
     display: flex;
@@ -920,7 +919,7 @@ a {
 
 .footer__label {
     font-family: "MuliBold";
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 40px;
     color: #ffffff;
 }
