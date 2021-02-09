@@ -392,12 +392,14 @@ a {
     width: 620px;
     padding-top: 100px;
     padding-bottom: 50px;
-    position: relative;
 }
 
 .title--yellow {
     color: #cae941;
+    position: relative;
 }
+
+
 
 .title--yellow::after {
     content: "";
@@ -405,8 +407,8 @@ a {
     width: 450px;
     height: 13px;
     position: absolute;
-    top: 220px;
-    left: 70px;
+    top: 70px;
+    left: -10px;
 }
 
 .about__list-item {
@@ -969,7 +971,6 @@ a {
     left: 60px;
 }
 
-
 .footer__btn-wrapper {
     display: flex;
     justify-content: center;
@@ -986,6 +987,9 @@ a {
     -ms-transform: rotate(270deg);
     -o-transform: rotate(270deg);
 }
+
+
+
 
 /* Здесь будут медиа запросы */
 
@@ -1028,7 +1032,6 @@ a {
         display: block;
     }
 
-
     /* section smoothies */
 
     .smoothies__title {
@@ -1053,7 +1056,6 @@ a {
         padding-top: 15px;
     }
 
-
     /* section about */
 
     .about {
@@ -1072,8 +1074,8 @@ a {
     }
 
     .title--yellow::after {
-        top: 155px;
-        left: 20px;
+        top: 70px;
+        left: -12px;
     }
 
     .about__list {
@@ -1102,6 +1104,8 @@ a {
 .product__name {
     font-size: 4rem;
     padding: 30px;
+    text-align: center;
+    line-height: 34px;
 }
 
 .product__capacity {
@@ -1133,6 +1137,7 @@ a {
 
 .story__img--stamp {
     margin: 30px;
+    width: 90vw;
 }
 .story__img::before {
     top: 0;
@@ -1180,7 +1185,6 @@ margin: 0;
 
 .blog__title {
     padding: 50px;
-    
 }
 
 .blog__img {
@@ -1197,7 +1201,6 @@ margin: 0;
 .blog__post-title{
     margin-top: 40px; 
 }
-
 
 .blog__post-title::before {
     display: none;
@@ -1234,6 +1237,10 @@ margin: 0;
     font-size: 3rem;
 }
 
+.footer__socials{
+    display: flex;
+}
+
 .footer__payment {
     padding-bottom: 15px;
 }
@@ -1246,10 +1253,71 @@ margin: 0;
     top: 13px;
     right: 400px;
 }
-
-
 }
 
 
+@media (min-width: 360рх) {
+
+    .header__navigacion {
+        display: none;
+        background-color: #0d724a;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99999;
+        flex-direction: column-reverse;
+        padding: 100px 0;
+        justify-content: flex-end;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        justify-content: space-between;
+        height: 430px;
+        margin-top: 150px;
+    }
+
+    .menu__item {
+        margin-right: 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .menu__link:hover {
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+    }
+    
+    .header__burger-btn {
+        display: block;
+    }
+
+    html, body {
+        font-family: 'MuliRegular', sans-serif;
+        font-size: 7px;
+    }
+
+/* section smoothies*/
+
+    .smoothies {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        text-align: center;
+    }
+
+    .story__img--stamp {
+        width: 90vw;
+    }
+
+    .story__img::before {
+        display: none;
+    }
+
+}
 
 
