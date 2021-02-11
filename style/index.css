@@ -253,7 +253,7 @@ a {
     top: 50px;
     right: 50px;
     display: none;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 .header__burger-btn-img {
@@ -374,15 +374,20 @@ a {
 .about {
     background-color: #14826f;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    height: 800px;
+}
+
+.about__container {
+    margin-top: 100px;
+    margin-bottom: 95px;
 }
 
 .about__img {
     margin-top: 65px;
-    width: 690px;
-    height: 820px;
     z-index: 1;
+    position: relative;
+    top: 70px;
 }
 
 .about__title {
@@ -391,8 +396,7 @@ a {
     color: #ffffff;
     line-height: 60px;
     width: 620px;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .title--yellow {
@@ -440,7 +444,6 @@ a {
     padding-left: 30px;
     padding-right: 40px;
     background-color: transparent;
-    margin-bottom: 95px;
     margin-top: 50px;
 }
 
@@ -685,6 +688,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .blog__left {
@@ -826,6 +830,7 @@ a {
 
 .footer__top {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 0 100px;
 }
@@ -848,15 +853,12 @@ a {
     background-color: #6c2c1c;
 }
 
-.footer__item-link {
+.footer__list-item {
+    list-style-type: none;
     font-family: "MuliBold";
     font-size: 1.8rem;
     line-height: 35px;
     color: #6d450c;
-}
-
-.footer__list-item {
-    list-style-type: none;
 }
 
 .footer__payments {
@@ -895,11 +897,9 @@ a {
 
 .footer__follow {
     display: flex;
-    padding-top: 30px;
-    padding-bottom: 130px;
-    padding-left: 185px;
+    justify-content: center;
+    padding: 30px 0 130px 185px;
     align-items: center;
-    position: relative;
 }
 
 .footer__follow-link {
@@ -908,6 +908,7 @@ a {
     line-height: 40px;
     color: #6d450c;
     padding-right: 45px;
+    position: relative;
 }
 
 .footer__follow-link::before {
@@ -916,8 +917,8 @@ a {
     width: 48px;
     height: 43px;
     position: absolute;
-    top: 20px;
-    right: 325px;
+    top: -14px;
+    left: -60px;
 }
 
 .footer__social-link {
@@ -1072,13 +1073,21 @@ a {
     }
 
     .about__img {
-        margin: 20px;
-        width: auto;
+        padding: 0 20px;
+        max-width: 100%;
+        height: 100%;
+        margin-top: 10px;
+        position: static;
+    }
+
+    .about__container {
+        margin: 0%;
     }
 
     .about__title {
-        width: 100%;
+        width: 100vw;
         padding: 30px;
+
     }
 
     .title--yellow::after {
@@ -1236,6 +1245,7 @@ margin: 0;
 
 .footer__top {
     flex-direction: column;
+    padding: 0 20px;
 }
 
 .footer__logo {
@@ -1261,15 +1271,17 @@ margin: 0;
     padding-bottom: 30px;
 }
 
-.footer__follow-link::before {
-    top: 13px;
-    right: 400px;
-}
+.footer__dont-miss-out {
+    width: 70%;
 }
 
 
-@media screen and (max-width: 375рх) {
+}
 
+
+
+
+@media screen and (max-width:375px) {
     .header__navigacion {
         display: none;
         background-color: #0d724a;
@@ -1314,7 +1326,7 @@ margin: 0;
         font-size: 7px;
     }
 
-/* section smoothies*/
+    /* section smoothies */
 
     .smoothies {
         padding-top: 15px;
@@ -1330,6 +1342,66 @@ margin: 0;
         display: none;
     }
 
+    .smoothies__text {
+        line-height: 30px;
+        margin: 15px 0;
+    }
+
+    /* section about */
+
+    .about__img {
+        width: 100%;
+        height: 80%;
+    }
+
+    .about__title {
+        line-height: 40px;
+        padding: 10px;
+    }
+
+    .about__container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .about__list-item {
+        padding-top: 10px;
+        padding-left: 0;
+        margin-left: 5px;
+    }
+
+    .about__btn {
+        width: 80vw;
+        margin-left: 30px;
+    }
+
+
+    /* section footer */
+
+    .footer__top {
+        padding: 0 20px;
+    }
+
+    .footer__list-item {
+        line-height: 28px;
+    }
+
+    .footer__follow {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 70px;
+        width: 100vw;
+    }
+
+    
+
+}
+
+@media screen and (max-width: 720px) {
+
+    .footer__follow {
+        padding: 30px;
+    }
 }
 
 
