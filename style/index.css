@@ -384,10 +384,9 @@ a {
 }
 
 .about__img {
-    margin-top: 65px;
     z-index: 1;
     position: relative;
-    top: 70px;
+    transform: translateY(70px);
 }
 
 .about__title {
@@ -1077,8 +1076,12 @@ a {
         max-width: 100%;
         height: 100%;
         margin-top: 10px;
-        position: static;
-    }
+        transform: none;
+        -webkit-transform: none;
+        -moz-transform: none;
+        -ms-transform: none;
+        -o-transform: none;
+}
 
     .about__container {
         margin: 0%;
@@ -1087,7 +1090,8 @@ a {
     .about__title {
         width: 100vw;
         padding: 30px;
-
+        padding: 20px;
+        margin: 0;
     }
 
     .title--yellow::after {
@@ -1325,6 +1329,7 @@ margin: 0;
     .about__title {
         line-height: 40px;
         padding: 10px;
+        margin: 0;
     }
 
     .about__container {
