@@ -1282,45 +1282,13 @@ margin: 0;
 
 
 @media screen and (max-width:375px) {
-    .header__navigacion {
-        display: none;
-        background-color: #0d724a;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 99999;
-        flex-direction: column-reverse;
-        padding: 100px 0;
-        justify-content: flex-end;
-    }
-
-    .menu__list {
-        flex-direction: column;
-        justify-content: space-between;
-        height: 430px;
-        margin-top: 150px;
-    }
-
-    .menu__item {
-        margin-right: 0;
-        text-align: center;
-        font-size: 3rem;
-    }
-
-    .menu__link:hover {
-        transform: none;
-        -webkit-transform: none;
-        -moz-transform: none;
-        -ms-transform: none;
-        -o-transform: none;
-    }
-    
     .header__burger-btn {
-        display: block;
+        top: 20px;
+        right: 20px;
+        z-index: 2;
     }
 
+    
     html, body {
         font-family: 'MuliRegular', sans-serif;
         font-size: 7px;
