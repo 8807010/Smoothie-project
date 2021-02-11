@@ -1202,7 +1202,7 @@ margin: 0;
     font-size: 2rem;
 }
 
-/* section testimonials */
+/* section blog */
 
 .blog {
     flex-direction: column;
@@ -1279,9 +1279,7 @@ margin: 0;
     width: 70%;
 }
 
-
 }
-
 
 
 
@@ -1291,7 +1289,6 @@ margin: 0;
         right: 20px;
         z-index: 2;
     }
-
     
     html, body {
         font-family: 'MuliRegular', sans-serif;
@@ -1347,6 +1344,21 @@ margin: 0;
         width: 80vw;
         margin-left: 30px;
     }
+
+    /* section products */
+
+    .product__img {
+        margin-top: 30px;
+    }
+
+    .product__name {
+        padding: 10px;
+    }
+
+    .product-btn {
+        margin: 40px 0;
+    }
+
 
 
     /* section footer */
