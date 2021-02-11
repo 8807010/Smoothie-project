@@ -621,6 +621,7 @@ a {
 
 .testimonials__feedback {
     width: 460px;
+    max-width: 100%;
     margin-right: 60px;
     display: flex;
     flex-direction: column;
@@ -1170,6 +1171,7 @@ a {
 
 .testimonials__title {
     margin: 20px;
+    font-size: 7vw;
 }
 
 .testimonials__arrows {
@@ -1179,6 +1181,8 @@ a {
 .testimonials__container {
     flex-direction: column;
     margin: 0;
+    width: 100%;
+    padding: 0 20px;
 }
 
 .testimonials__feedback::before {
@@ -1375,6 +1379,20 @@ margin: 0;
         margin: 0 10px 20px;
     }
 
+     /* section testimonials */
+
+    .testimonials__title {
+        margin: 15px 15px 0;
+        font-size: 3.5rem;
+    }
+
+    .testimonials__container {
+
+    }
+
+    .testimonials__text {
+
+    }
 
 
     /* section footer */
@@ -1397,6 +1415,16 @@ margin: 0;
     
 
 }
+
+
+
+@media screen and (max-width: 568px) {
+    .testimonials__title {
+
+    }
+}
+
+
 
 @media screen and (max-width: 720px) {
 
