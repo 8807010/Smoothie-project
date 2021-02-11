@@ -704,9 +704,8 @@ a {
 }
 
 .blog__img {
-    width: 555px;
-    height: 400px;
     margin-bottom: 200px;
+    max-width: 100%;
 }
 
 .blog__post {
@@ -897,7 +896,7 @@ a {
 
 .footer__follow {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 30px 0 130px 185px;
     align-items: center;
 }
@@ -925,6 +924,10 @@ a {
     padding-right: 25px;
 }
 
+.footer__social-link:last-child {
+    padding-right: 0;
+}
+
 .footer__bottom {
     display: flex;
     justify-content: center;
@@ -946,6 +949,9 @@ a {
     font-size: 1.6rem;
     line-height: 40px;
     color: #ffffff;
+    position: absolute;
+    top: 8px;
+    right: 145px;
 }
 
 .arrow--white-top {
@@ -964,18 +970,15 @@ a {
     justify-content: center;
     align-items: center;
     position: absolute;
-    position: absolute;
-    top: -35px;
-    left: 60px;
+    position: fixed;
+    bottom: 35px;
+    right: 70px;
 }
 
 .footer__btn-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 10px;
-    right: 145px;
 }
 
 .arrow--white-top {
@@ -1217,7 +1220,11 @@ margin: 0;
 }
 
 .blog__img {
-    margin: 0%;
+    margin: 0 20px;
+}
+
+.blog__wrapper {
+    padding: 0 20px;
 }
 
 .blog__post {
@@ -1226,7 +1233,9 @@ margin: 0;
 
 .blog__text {
     margin-bottom: 30px;
+    font-size: 2.2rem;
 }
+
 .blog__post-title{
     margin-top: 40px; 
 }
@@ -1236,6 +1245,7 @@ margin: 0;
 }
 
 /* section instagram */
+
 .instagram__link {
     margin-bottom: 20px;
 }
@@ -1276,7 +1286,7 @@ margin: 0;
 }
 
 .footer__follow {
-    padding-bottom: 30px;
+    padding: 30px 0 30px 30px;
 }
 
 .footer__dont-miss-out {
@@ -1406,9 +1416,6 @@ margin: 0;
     }
 
     .footer__follow {
-        display: flex;
-        flex-wrap: wrap;
-        padding-left: 70px;
         width: 100vw;
     }
 
@@ -1418,19 +1425,32 @@ margin: 0;
 
 
 
-@media screen and (max-width: 568px) {
-    .testimonials__title {
-
+@media screen and (max-width: 600px) {
+    .footer__label {
+    display: none;
     }
-}
-
-
-
-@media screen and (max-width: 720px) {
 
     .footer__follow {
-        padding: 30px;
+    width: 90%;
+    padding-left: 0;
     }
+
+    .footer__dont-miss-out {
+        width: 100%;
+    }
+
+    .footer__follow-link {
+        padding-right: 25px;
+    }
+
+    .footer__social-link {
+        padding-right: 20px;
+    }
+
 }
+
+
+
+
 
 
