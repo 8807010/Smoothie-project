@@ -1359,6 +1359,22 @@ margin: 0;
         margin: 40px 0;
     }
 
+    /* section story */
+
+    .story__title {
+        padding: 15px 45px;
+    }
+
+    .story__text {
+        line-height: 30px;
+        padding: 0 30px;
+        font-size: 2.5rem;
+    }
+
+    .story__img--stamp {
+        margin: 0 10px 20px;
+    }
+
 
 
     /* section footer */
