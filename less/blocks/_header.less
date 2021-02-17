@@ -1,0 +1,92 @@
+// main: ./../main.less
+
+.header {
+    background-image: url('../imаgеs/header-bg-img.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    &__navigacion {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    &__top {
+        padding: 70px 100px 70px;
+        position: relative;
+    }
+    &__menu {
+        border: 1px solid red;
+    }
+    &__right-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 420px;
+    }
+    &__personal {
+        position: relative;
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 2px;
+            width: 50px;
+            background-color: #ffd68f;
+            position: absolute;
+            top: 50%;
+            right: -95px;
+            transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: center;
+    }
+    &__btn {
+        width: 280px;
+        height: @buttonHeight;
+        font-size: 2.4rem;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    &__burger-btn {
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        position: fixed;
+        top: 50px;
+        right: 50px;
+        display: none;
+    }
+    &__burger-btn-img {
+        width: 100%;
+    }
+    &__logo {
+        border: 2px solid red;
+        width: 210px;
+        height: 72px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+}
+
+
+
+
+
+
+

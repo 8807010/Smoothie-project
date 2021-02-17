@@ -1,311 +1,39 @@
-// out: ./main.min.css, compress: true, sourceMap: true
+// out: ../style/main.min.css, compress: true, sourceMap: true
+@import "./_vars.less";
+@import "./_fonts.less";
+@import "./_mixins.less";
 
 
 
-/* Здесь подключаем шрифты, используя правило @font-face*/
-@font-face {
-    font-family: MuliRegular; 
-    src: url(../assets/fonts/Muli-Regular.woff); 
-}
 
-@font-face {
-    font-family: MuliBold;
-    src: url(../assets/fonts/Muli-Bold.woff);
-}
-
-@font-face {
-    font-family: MuliExtraBold;
-    src: url(../assets/fonts/Muli-ExtraBold.woff);
-}
-
-@font-face {
-    font-family: MuliExtraBoldItalic;
-    src: url(../assets/fonts/Muli-ExtraBoldItalic.woff);
-}
-
-@font-face {
-    font-family: MuliRegular;
-    src: url(../assets/fonts/Muli-Regular.woff);
-}
-
-@font-face {
-    font-family: PoppinsMedium;
-    src: url(../assets/fonts/Poppins-Medium.ttf);
-}
-
-@font-face {
-    font-family: PoppinsSemiBold;
-    src: url(../assets/fonts/Poppins-SemiBold.ttf);
-}
-
-@font-face {
-    font-family: MuliItalic;
-    src: url(../assets/fonts/Muli-Italic.ttf);
-}
-
-@font-face {
-    font-family: MuliSemiBoldItalic;
-    src: url(../assets/fonts/Muli-SemiBoldItalic.ttf);
-}
 
 /* Общие стили */
 html,
 body {
     font-family: 'MuliRegular', sans-serif;
-    font-size: 10px;
+    font-size: @baseFontSize;
 }
 
 a {
     text-decoration: none;
 }
 
-/* Header */
 
-.header {
-    background-image: url('../imаgеs/header-bg-img.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+// blocks
 
-.header__navigacion {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
+@import "./blocks/_button.less";
+@import "./blocks/_header.less";
+@import "./blocks/_menu.less";
+@import "./blocks/_personal.less";
+@import "./blocks/_social.less";
 
-.header__top {
-    padding: 70px 100px 70px;
-    position: relative;
-}
 
-.header__menu {
-    border: 1px solid red;
-}
 
-.menu__list {
-    display: flex;
-    border: 1px solid red;
-}
 
-.menu__item {
-    list-style-type: none;
-    border: 1px solid red;
-    font-family: "MuliBold";
-    font-size: 1.6rem;
-    margin-right: 30px;
-}
 
-.menu__item:nth-child(6n) {
-    margin-right: 0;
-}
 
-.menu__link {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-}
 
-.menu__link:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    display: block;
-}
 
-.header__right-block {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 420px;
-}
-
-.header__logo {
-    border: 2px solid red;
-    width: 210px;
-    height: 72px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-}
-
-.personal__list {
-    border: 1px solid red;
-    list-style-type: none;
-    display: flex;
-}
-
-.header__personal {
-    position: relative;
-}
-
-.header__personal::after {
-    content: "";
-    display: inline-block;
-    height: 2px;
-    width: 50px;
-    background-color: #ffd68f;
-    position: absolute;
-    top: 50%;
-    right: -95px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-
-.personal__list-item {
-    margin-right: 45px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.personal__list-item:last-child {
-    margin-right: 0;
-}
-
-.personal__link {
-    /* border: 2px solid red; */
-    display: flex;
-    align-items: center;
-}
-
-.personal__cart-count {
-    font-family: "MuliRegular";
-    font-size: 1rem;
-    color: #000;
-    background-color: #fff;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: -8px;
-    left: 150px;
-}
-
-.social__list-item {
-    margin-right: 10px;
-    background-color: #ffffff;
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
-
-.social__link {
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.social__list {
-    border: 1px solid red;
-    list-style-type: none;
-    display: flex;
-}
-
-.social__list-item:last-child {
-    margin-right: 0;
-}
-
-.header__content {
-    display: flex;
-    justify-content: center;
-}
-
-.header__btn {
-    width: 280px;
-    height: 70px;
-    font-size: 2.4rem;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-.header__burger-btn {
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    position: fixed;
-    top: 50px;
-    right: 50px;
-    display: none;
-    /* z-index: 2; */
-}
-
-.header__burger-btn-img {
-    width: 100%;
-}
-
-.btn--green {
-    background-color: #0aa566;
-    position: relative;
-}
-
-.btn--green:hover {
-    background-color: #0d724a;
-}
-
-.btn--green:hover::after {
-    right: 28px;
-}
-
-.btn--green::after,
-.btn--border-yellow::after {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    height: 16px;
-    width: 30px;
-    background-image: url(../imаgеs/Arrow.png);
-    top: 50%;
-    right: 38px;
-    transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-}
-
-.btn {
-    color: #ffffff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "MuliExtraBold";
-    border-radius:35px;
-    -webkit-border-radius:35px;
-    -moz-border-radius:35px;
-    -ms-border-radius:35px;
-    -o-border-radius:35px;
-}
 
 /* Smoothies */
 

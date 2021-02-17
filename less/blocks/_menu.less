@@ -1,0 +1,33 @@
+// main: ./../main.less
+
+.menu__list {
+    display: flex;
+    border: 1px solid red;
+}
+
+.menu__item {
+    list-style-type: none;
+    border: 1px solid red;
+    font-family: "MuliBold";
+    font-size: 1.6rem;
+    margin-right: 30px;
+}
+
+.menu__item:nth-child(6n) {
+    margin-right: 0;
+}
+
+.menu__link {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu__link:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    display: block;
+}
