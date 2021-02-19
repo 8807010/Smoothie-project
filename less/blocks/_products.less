@@ -3,67 +3,59 @@
 
 .products {
     display: flex;
+    &__item {
+        display: flex;
+        flex-basis: 25%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--chocolate {
+            background-color: #632b17;
+        }
+        &--vegan {
+            background-color: #178670;
+        }
+        &--lemon {
+            background-color: #f7ae3b;
+        }
+        &--turmeric {
+            background-color: #c3471b;
+        }
+    }
+    &__img {
+        width: 120px;
+        height: 300px;
+        margin-top: 130px;
+    }
+    &__name {
+        font-family: "MuliBold";
+        font-size: 2.4rem;
+        line-height: 22px;
+        color: #fff;
+        padding-top: 35px;
+    }
+    &__capacity {
+        font-family: "MuliItalic";
+        font-size: 2rem;
+        line-height: 32px;
+        color: #fff; 
+    }
+    &-btn {
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        font-size: 2.1rem;
+        line-height: 22px;
+        color: #fff;
+        padding-left: 35px;
+        padding-right: 35px;
+        background-color: transparent;
+        margin-bottom: 80px;
+        margin-top: 65px;
+    }
 }
 
-.product__item {
-    display: flex;
-    flex-basis: 25%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.product__item--chocolate {
-    background-color: #632b17;
-}
-
-.product__item--vegan {
-    background-color: #178670;
-}
-
-.product__item--lemon {
-    background-color: #f7ae3b;
-}
-
-.product__item--turmeric {
-    background-color: #c3471b;
-}
-
-.product__img {
-    width: 120px;
-    height: 300px;
-    margin-top: 130px;
-}
-
-.product__name {
-    font-family: "MuliBold";
-    font-size: 2.4rem;
-    line-height: 22px;
-    color: #fff;
-    padding-top: 35px;
-}
-
-.product__capacity {
-    font-family: "MuliItalic";
-    font-size: 2rem;
-    line-height: 32px;
-    color: #fff; 
-}
-
-.product-btn {
-    width: 200px;
-    height: 60px;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
-    font-size: 2.1rem;
-    line-height: 22px;
-    color: #fff;
-    padding-left: 35px;
-    padding-right: 35px;
-    background-color: transparent;
-    margin-bottom: 80px;
-    margin-top: 65px;
-}
