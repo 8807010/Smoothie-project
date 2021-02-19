@@ -1,6 +1,7 @@
 // out: ../style/main.min.css, compress: true, sourceMap: true
-@import "./_vars.less";
+
 @import "./_fonts.less";
+@import "./_vars.less";
 @import "./_mixins.less";
 
 
@@ -10,7 +11,7 @@
 /* Общие стили */
 html,
 body {
-    font-family: 'MuliRegular', sans-serif;
+    font-family: "MuliRegular", sans-serif;
     font-size: @baseFontSize;
 }
 
@@ -227,7 +228,7 @@ a {
 }
 
 .product__capacity {
-    font-family: " MuliItalic";
+    font-family: "MuliItalic";
     font-size: 2rem;
     line-height: 32px;
     color: #fff; 
@@ -724,6 +725,153 @@ a {
 
 /* Здесь будут медиа запросы */
 
+@media screen and (max-width:1500px) {
+    .header__logo {
+        top: 120%;
+    }
+
+    .header__content {
+        margin-top: 120px;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+    .header__navigacion {
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__top {
+        padding: 0;
+    }
+
+    .header__logo {
+        top: 100%;
+    }
+
+    .header__menu {
+        margin: 40px; 
+    }
+    
+    .header__content {
+        margin-top: 100px;
+    }
+
+    .smoothies {
+        padding-top: 20px;
+        padding-bottom: 15px;
+    }
+
+    .smoothies__text {
+        font-size: 2.3rem;
+        line-height: 40px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        max-width: 100%;
+
+    }
+
+    .smoothies__features {
+        width: 100%;
+    }
+
+    .about__container {
+        margin-bottom: 50px;
+    }
+
+    .product__img {
+        margin-top: 40px;
+    }
+
+    .product__name {
+        text-align: center;
+    }
+
+    .product-btn {
+        margin-bottom: 30px;
+        margin-top: 20px;
+    }
+
+    .story__title {
+        padding-top: 50px;
+    }
+
+    .story__container {
+        margin-left: 20px;
+    }
+
+    .story__img {
+        margin: 40px 0;
+    }
+
+    .story__img--stamp {
+        max-width: 100%;
+    }
+
+    .story__img::before {
+        display: none;
+    }
+
+    .story__btn {
+        margin-bottom: 140px;
+    }
+
+    .testimonials__container {
+        margin-bottom: 60px;
+    }
+
+    .blog__title {
+        padding: 20px 0;
+    }
+
+    .blog__post-title::before {
+        max-width: 100%;
+    }
+
+    .blog__img {
+        margin-bottom: 50px;
+    }
+
+    .footer__top {
+        justify-content: space-evenly;
+        padding: 0px 30px;
+    }
+
+    .footer__follow {
+        padding-bottom: 30px;
+    }
+
+    .footer__logo {
+        padding: 30px 0 30px;
+    }
+
+    .footer__title {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    
+    .footer__logo {
+        width: 100%;
+        padding: 20px 0 0;
+    }
+    .footer__info {
+        margin-right: 20px;
+    }
+
+}
+
+
+
+
+
 @media screen and (max-width: 768px) {
     .header__navigacion {
         display: none;
@@ -737,6 +885,14 @@ a {
         flex-direction: column-reverse;
         padding: 100px 0;
         justify-content: flex-end;
+    }
+
+    .header__logo {
+        margin-top: 180px;
+    }
+
+    .header__content {
+        margin-top: 300px;
     }
 
     .menu__list {
@@ -1035,6 +1191,61 @@ margin: 0;
 
 
 
+
+@media screen and (max-width: 600px) {
+
+    .blog {
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .blog__text {
+        padding: 20px 20px 10px 20px;
+        width: 100%;
+    }
+
+    .about__btn {
+        margin: 20px 10px;
+        font-size: 1.6rem;
+        padding: 0 20px;
+        width: 80%;
+    }
+
+    .about__list {
+        padding: 0 30px;
+    }
+    
+    .about__title {
+        font-size: 4rem;
+        line-height: 40px;
+    }
+
+    .footer__label {
+        display: none;
+    }
+
+    .footer__follow {
+        width: 90%;
+        padding-left: 0;
+    }
+
+    .footer__dont-miss-out {
+        width: 100%;
+    }
+
+    .footer__follow-link {
+        padding-right: 25px;
+    }
+
+    .footer__social-link {
+        padding-right: 20px;
+    }
+
+}
+
+
+
+
 @media screen and (max-width:375px) {
     .header__burger-btn {
         top: 20px;
@@ -1043,11 +1254,11 @@ margin: 0;
     }
     
     html, body {
-        font-family: 'MuliRegular', sans-serif;
+        font-family: "MuliRegular", sans-serif;
         font-size: 7px;
     }
 
-    /* section smoothies */
+        /* section smoothies */
 
     .smoothies {
         padding-top: 15px;
@@ -1160,157 +1371,9 @@ margin: 0;
     }
 
     .footer__follow {
-        width: 100vw;
-    }
-
-}
-
-
-@media screen and (max-width: 600px) {
-
-    .blog {
-        align-items: flex-start;
-        justify-content: flex-start;
-    }
-
-    .blog__text {
-        padding: 20px 20px 10px 20px;
         width: 100%;
     }
 
-    .about__btn {
-        margin: 20px 10px;
-        font-size: 1.6rem;
-        padding: 0 20px;
-        width: 80%;
-    }
-
-    .about__list {
-        padding: 0 30px;
-    }
-    
-    .about__title {
-        font-size: 4rem;
-        line-height: 40px;
-    }
-
-    .footer__label {
-        display: none;
-    }
-
-    .footer__follow {
-        width: 90%;
-        padding-left: 0;
-    }
-
-    .footer__dont-miss-out {
-        width: 100%;
-    }
-
-    .footer__follow-link {
-        padding-right: 25px;
-    }
-
-    .footer__social-link {
-        padding-right: 20px;
-    }
-
 }
-
-
-@media screen and (max-width: 1200px) {
-
-    .header__top {
-        padding: 40px 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .smoothies {
-        padding-top: 20px;
-        padding-bottom: 15px;
-    }
-
-    .smoothies__text {
-        font-size: 2.3rem;
-        line-height: 40px;
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-    .about__container {
-        margin-bottom: 50px;
-    }
-
-    .product__img {
-        margin-top: 40px;
-    }
-
-    .product-btn {
-        margin-bottom: 30px;
-        margin-top: 20px;
-    }
-
-    .story__title {
-        padding-top: 220px;
-    }
-
-    .story__img {
-        margin: 40px 0;
-    }
-
-    .story__btn {
-        margin-bottom: 140px;
-    }
-
-    .testimonials__container {
-        margin-bottom: 60px;
-    }
-
-    .blog__title {
-        padding: 20px 0;
-    }
-
-    .blog__post-title::before {
-        max-width: 100%;
-    }
-
-    .blog__img {
-        margin-bottom: 50px;
-    }
-
-    .footer__top {
-        justify-content: space-evenly;
-        padding: 0px 30px;
-    }
-
-    .footer__follow {
-        padding-bottom: 30px;
-    }
-
-    .footer__logo {
-        padding: 30px 0 30px;
-    }
-
-    .footer__title {
-        padding-top: 40px;
-        padding-bottom: 30px;
-    }
-    
-    .footer__logo {
-        width: 100%;
-        padding: 20px 0 0;
-    }
-    .footer__info {
-        margin-right: 20px;
-    }
-
-}
-
-
-
-
 
 
