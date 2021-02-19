@@ -4,49 +4,44 @@
 .story {
     display: flex;
     justify-content: space-evenly;
-    
+    &__title {
+        font-family: "MuliExtraBold";
+        font-size: 5rem;
+        line-height: 40px;
+        color: #f7ae3b;
+        padding-top: 260px;
+        padding-bottom: 45px;
+    }
+    &__text {
+        font-family: "MuliRegular";
+        font-size: 1.8rem;
+        line-height: 35px;
+        width: 510px;
+    }
+    &__img {
+        position: relative; 
+        margin-top: 120px;
+        margin-bottom: 160px;
+        &::before {
+            content: "";
+            background-image: url(../imаgеs/Stamp.png);
+            width: 290px;
+            height: 220px;
+            position: absolute;
+            top: 40px;
+            left: -170px;
+            z-index: 1;
+        }
+    }
+    &__btn {
+        width: 300px;
+        height: 60px;
+        padding-left: 30px;
+        padding-right: 40px;
+        font-size: 2.1rem;
+        line-height: 22px;
+        margin-top: 60px;
+        margin-bottom: 315px;
+    }
 }
 
-.story__title {
-    font-family: "MuliExtraBold";
-    font-size: 5rem;
-    line-height: 40px;
-    color: #f7ae3b;
-    padding-top: 260px;
-    padding-bottom: 45px;
-}
-
-.story__text {
-    font-family: "MuliRegular";
-    font-size: 1.8rem;
-    line-height: 35px;
-    width: 510px;
-}
-
-.story__img {
-    position: relative; 
-    margin-top: 120px;
-    margin-bottom: 160px;
-}
-
-.story__img::before {
-    content: "";
-    background-image: url(../imаgеs/Stamp.png);
-    width: 290px;
-    height: 220px;
-    position: absolute;
-    top: 40px;
-    left: -170px;
-    z-index: 1;
-}
-
-.story__btn {
-    width: 300px;
-    height: 60px;
-    padding-left: 30px;
-    padding-right: 40px;
-    font-size: 2.1rem;
-    line-height: 22px;
-    margin-top: 60px;
-    margin-bottom: 315px;
-}
