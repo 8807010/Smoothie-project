@@ -10,6 +10,14 @@
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    &:hover {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transition: 0.5s;
+    }
 }
 
 .social__link {
@@ -22,7 +30,6 @@
 }
 
 .social__list {
-    border: 1px solid red;
     list-style-type: none;
     display: flex;
 }

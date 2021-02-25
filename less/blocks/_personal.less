@@ -1,7 +1,6 @@
 // main: ./../main.less
 
 .personal__list {
-    border: 1px solid red;
     list-style-type: none;
     display: flex;
 }
@@ -18,9 +17,17 @@
 }
 
 .personal__link {
-    /* border: 2px solid red; */
     display: flex;
     align-items: center;
+    &:hover {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transition: 0.5s;
+        display: block;
+    }
 }
 
 .personal__cart-count {

@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/normalize.css">
     <link rel="stylesheet" href="./style/main.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> 
     <link rel="stylesheet" href="./libraries/WOW-master/css/libs/animate.css">
     <link href="imаgеs">
     <title>Smoothie-project</title>
@@ -75,9 +76,9 @@
                     </div>
                 </div>
             </div>
-            <div class="header__logo logo">
+            <div class="header__logo logo ">
                 <a class="logo__link" href="#">
-                    <img class="logo__img" src="./imаgеs/Logo.png" alt="Organic fresh foods">
+                    <img class="logo__img wow animate__backInDown" src="./imаgеs/Logo.png" alt="Organic fresh foods">
                 </a>
             </div>   
             <button class="header__burger-btn">
@@ -90,10 +91,15 @@
     </header>
     
     <section class="smoothies">
-        <h2 class="smoothies__title title">What are these smoothies?</h2>
+        <h2 class="smoothies__title title wow animate__fadeInLeftBig"
+            data-wow-delay="0.5s"
+            data-wow-offset="300">
+        What are these smoothies?</h2>
         <p class="smoothies__text text">A smoothie is a drink made from pureed raw fruit, vegetables, and sometimes dairy products (milk, yogurt, ice-cream or cottage cheese), typically using a blender. Smoothies may be made using other ingredients, such as water, crushed ice, fruit juice, sweeteners (e.g. honey, sugar, stevia, or syrup), whey powder, plant milk, nuts, nut butter, seeds, tea, chocolate, herbal supplements, or nutritional supplements.</p>
         
-        <div class="smoothies__features">
+        <div class="smoothies__features wow animate__bounce"
+                data-wow-delay="0.5s"
+                data-wow-offset="300">
             <div class="smoothies__feature">
                 <img class="smoothies__feature-icon" src="./imаgеs/Icon-plant-based.png" alt="Plant Based">
                 <span class="smoothies__feature-title">Plant Based</span>
@@ -130,9 +136,12 @@
     </section>
 
     <section class="about">
-        <img class="about__img" src="./imаgеs/Welcome summer.png" alt="two-bottles">
+        <img class="about__img" data-tilt src="./imаgеs/Welcome summer.png" alt="two-bottles">
         <div class="about__container">
-            <h2 class="about__title title">What makes Smoothie an <span class="title--yellow">awesome drink?</span></h2>
+            <h2 class="about__title title wow animate__fadeInRightBig"
+                data-wow-delay="0.5s"
+                data-wow-offset="300"
+            >What makes Smoothie an <span class="title--yellow">awesome drink?</span></h2>
             <ul class="about__list">
                 <li class="about__list-item"><span class="about__text--bold">Crunchy </span>Puffs Texture</li>
                 <li class="about__list-item"><span class="about__text--bold">100 Calories </span>per drink</li>
@@ -143,35 +152,33 @@
                 <li class="about__list-item"><span class="about__text--bold">Gluten-Free & Grain-Free</span></li>
                 <li class="about__list-item"><span class="about__text--bold">Corn-Free & Soy-Free</span></li>
             </ul>
-            <button class="about__btn btn btn--border-yellow">About Organic Smoothie
-                <img class="arrow arrow--yellow" src="./imаgеs/Arrow.png" alt=""></button>
-        </div>    
+            <button class="about__btn btn btn--border-yellow">About Organic Smoothie</div>    
     </section>
 
     <section class="product">
         <div class="product__item product__item--chocolate">
-            <img class="product__img" src="./imаgеs/Dark Chocolate Smoothie.png" alt="Dark Chocolate Smoothie">
+            <img class="product__img" data-tilt data-tilt-scale='1.2' src="./imаgеs/Dark Chocolate Smoothie.png" alt="Dark Chocolate Smoothie">
             <h3 class="product__name">Dark Chocolate Smoothie</h3>
             <span class="product__capacity">100 ml</span> 
             <button class="product-btn btn btn--border-white">Buy
                 <img class="arrow arrow--white" src="./imаgеs/Arrow-white.png" alt="Arrow-white"></button>
         </div>
         <div class="product__item product__item--vegan">
-            <img class="product__img" src="./imаgеs/Vegan Lettuce Smoothie.png" alt="Vegan Lettuce Smoothie">
+            <img class="product__img" data-tilt data-tilt-scale='1.2' src="./imаgеs/Vegan Lettuce Smoothie.png" alt="Vegan Lettuce Smoothie">
             <h3 class="product__name">Vegan Lettuce Smoothie</h3>
             <span class="product__capacity">100 ml</span> 
             <button class="product-btn btn btn--border-white">Buy
                 <img class="arrow arrow--white" src="./imаgеs/Arrow-white.png" alt="Arrow-white"></button>
             </div>
         <div class="product__item product__item--lemon">
-            <img class="product__img" src="./imаgеs/Lemon Ginger Smoothie.png" alt="Lemon Ginger Smoothie">
+            <img class="product__img" data-tilt data-tilt-scale='1.2' src="./imаgеs/Lemon Ginger Smoothie.png" alt="Lemon Ginger Smoothie">
             <h3 class="product__name">Lemon Ginger Smoothie</h3>
             <span class="product__capacity">100 ml</span> 
             <button class="product-btn btn btn--border-white">Buy
                 <img class="arrow arrow--white" src="./imаgеs/Arrow-white.png" alt="Arrow-white"></button>
         </div>
         <div class="product__item product__item--turmeric">
-            <img class="product__img" src="./imаgеs/Turmeric Garlic Smoothie.png" alt="Turmeric Garlic Smoothie">
+            <img class="product__img" data-tilt data-tilt-scale='1.2' src="./imаgеs/Turmeric Garlic Smoothie.png" alt="Turmeric Garlic Smoothie">
             <h3 class="product__name">Turmeric Garlic Smoothie</h3>
             <span class="product__capacity">100 ml</span> 
             <button class="product-btn btn btn--border-white">Buy
@@ -181,17 +188,23 @@
 
     <section class="story">
         <div class="story__container">
-            <h2 class="story__title title">Our story</h2>
+            <h2 class="story__title title wow animate__fadeInLeftBig"
+                data-wow-delay="0.5s"
+                data-wow-offset="300"
+            >Our story</h2>
             <p class="story__text text">As products typically using raw fruits or vegetables, smoothies include dietary fiber (e.g. pulp, skin, and seeds) and so are thicker than fruit juice, often with a consistency similar to a milkshake.</p>
             <button class="story__btn btn btn--green">Who we are</button>
         </div>
-        <div class="story__img">
+        <div class="story__img" data-tilt>
             <img class="story__img--stamp" src="./imаgеs/Story.png" alt="Story">
         </div>
     </section>
 
     <section class="testimonials">
-        <h2 class="testimonials__title title">Why clients <span class="testimonials__title--red">LOVE</span> us?</h2>
+        <h2 class="testimonials__title title wow animate__fadeInRightBig"
+            data-wow-delay="0.5s"
+            data-wow-offset="300"
+        >Why clients <span class="testimonials__title--red">LOVE</span> us?</h2>
         <div class="testimonials__container">
             <div class="testimonials__feedback">
                 <q class="testimonials__text text">Smoothie is great. I don't know what else to say. I will let my mum know about this, she could really make use of Smoothie! Smoothie saved my business.</q>
@@ -210,8 +223,11 @@
 
     <section class="blog">
         <div class="blog__left">
-            <h2 class="blog__title title">Our blog</h2>
-            <img class="blog__img" src="./imаgеs/Blog.png" alt="Blog">
+            <h2 class="blog__title title wow animate__fadeInLeftBig"
+                data-wow-delay="0.5s"
+                data-wow-offset="300"
+            >Our blog</h2>
+            <img class="blog__img" data-tilt src="./imаgеs/Blog.png" alt="Blog">
         </div>
         <div class="blog__wrapper">
             <article class="blog__post">
@@ -228,19 +244,19 @@
         <a class="instagram__link" href="#">
             <img class="instagram__logo" src="./imаgеs/Icon-inst.png" alt="instagram-icon">ashasuperfoods</a>
         <div class="instagram__galary">
-            <div class="instagram__bg">
+            <div class="instagram__bg" data-tilt>
                 <img class="instagram__img" src="./imаgеs/Inst1.png" alt="Instagram-photo">
             </div>
-            <div class="instagram__bg">
+            <div class="instagram__bg" data-tilt>
                 <img class="instagram__img" src="./imаgеs/Inst2.png" alt="Instagram-photo">
             </div>
-            <div class="instagram__bg">
+            <div class="instagram__bg" data-tilt>
                 <img class="instagram__img" src="./imаgеs/Inst3.png" alt="Instagram-photo">
             </div>
-            <div class="instagram__bg">
+            <div class="instagram__bg" data-tilt>
                 <img class="instagram__img" src="./imаgеs/Inst4.png" alt="Instagram-photo">
             </div>
-            <div class="instagram__bg">
+            <div class="instagram__bg" data-tilt>
                 <img class="instagram__img" src="./imаgеs/Inst5.png" alt="Instagram-photo">
             </div>
         </div>
@@ -248,7 +264,8 @@
 
     <footer class="footer">
         <div class="footer__top">
-            <div class="footer__logo logo">
+            <div class="footer__logo logo wow animate__fadeInUp"
+                data-wow-delay="1s">
                 <a class="logo__link" href="#"><img class="logo__img" src="./imаgеs/Logo.png" alt="Organic fresh foods"></a>
             </div>
             <div class="footer__info">
@@ -306,11 +323,13 @@
         </div>
     </footer>
 
-    <script src="./libraries/WOW-master/dist/wow.min.js"></script>
+    <script src="./libraries/WOW-master/dist/wow.js"></script>
 
     <script>
         new WOW().init();
     </script>
+
+    <script type="text/javascript" src="./libraries/Vanilla/vanilla-tilt.babel.min.js"></script>
 
 </body>
 
