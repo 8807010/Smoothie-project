@@ -4,21 +4,20 @@
 @import "./_vars.less";
 @import "./_mixins.less";
 
-
-
-
-
 /* Общие стили */
 html,
 body {
-    font-family: "MuliRegular", sans-serif;
-    font-size: @baseFontSize;
+  font-family: "MuliRegular", sans-serif;
+  font-size: @baseFontSize;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth; //для плавной прокрутки кнопки "наверх"
+}
 
 // blocks
 
@@ -39,9 +38,3 @@ a {
 @import "./blocks/_instagram.less";
 @import "./blocks/_media.less";
 @import "./blocks/_arrow.less";
-
-
-
-html {
-    scroll-behavior: smooth;
-  }
