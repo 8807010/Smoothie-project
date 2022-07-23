@@ -7,7 +7,7 @@ Smoothie-project is my first site with a bunch of bugs. I love him very much and
 ✅ Верстка под десктоп  
 ✅ БЭМ нейминг  
 ✅ Адаптивная верстка  
-✅ Анимации 
+✅ Анимации  
 ✅ Препроцессор LESS  
 ✅ Верстка на CSS Grid  
 ✅ Верстка на Flexbox  
