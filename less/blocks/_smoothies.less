@@ -1,60 +1,59 @@
 // main: ./../main.less
 
 .smoothies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 110px;
+  &__text {
+    max-width: 915px;
+    width: 100%;
+  }
+  &__title {
+    font-size: 5rem;
+    color: #f7ae3b;
+    line-height: 40px;
+  }
+  &__text {
+    width: 915px;
+    font-family: 'MuliRegular';
+    font-size: 1.8rem;
+    line-height: 35px;
+    text-align: center;
+    margin-top: 55px;
+    margin-bottom: 60px;
+    color: #1e1e1e;
+  }
+  &__features {
+    width: 1010px;
+    height: 390px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #f6edde;
+    grid-gap: 2px;
+  }
+  &__feature {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 110px;
-    &__text {
-        max-width: 915px;
-        width: 100%;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s ease-in-out;
+      box-shadow: 0px 3px 5px 5px #ccc;
     }
-    &__title {
-        font-size: 5rem;
-        color: #f7ae3b;
-        line-height: 40px;
-    }
-    &__text {
-        width: 915px;
-        font-family: "MuliRegular";
-        font-size: 1.8rem;
-        line-height: 35px;
-        text-align: center;
-        margin-top: 55px;
-        margin-bottom: 60px;
-        color: #1e1e1e;
-    }
-    &__features {
-        width: 1010px;
-        height: 390px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        justify-content: center;
-        align-items: center;
-        background-color: #f6edde;
-        grid-gap: 2px;
-    }
-    &__feature {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100%;
-        background-color: #fff;
-        &:hover {
-            transform: scale(1.2);
-            transition: 0.5s;
-        }
-    }
-    &__feature-title {
-        color: #f2612d;
-        font-family: "MuliExtraBold";
-        font-size: 2.5rem;
-        margin-top: 25px;
-    }
-
+  }
+  &__feature-title {
+    color: #f2612d;
+    font-family: 'MuliExtraBold';
+    font-size: 2.5rem;
+    margin-top: 25px;
+  }
 }
-
